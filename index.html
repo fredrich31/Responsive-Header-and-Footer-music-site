@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Header and Footer music site</title>
 
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+
+
+  <!-- Navbar -->
+<header>
+  <!-- Nav Container -->
+  <div class="nav container">
+      <!-- Menu Icon -->
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <!-- Logo -->
+      <div class="logo">
+      <a href="#">On<span>Wave</span></a>
+      </div>
+
+      <!-- Nav List -->
+      <ul class="navbar">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#cars">Cars</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#parts">Parts</a></li>
+          <li><a href="#blog">Our Blog</a></li>
+      </ul>
+      <!-- Search Icon -->
+      <i class="bx bx-search" id="search-icon"></i>
+      <!-- Search Box -->
+      <div class="search-box container">
+          <input type="search" name="" id="" placeholder="Search here...">
+      </div>
+  </div>
+  </header>
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1>Offering the Best <span>Music</span> to Listeners Worldwide</h1>
+      <p>Never stop the Music</p>
+      <!-- Home Button -->
+      <a href="#" class="btn">Learn More &raquo;</a>
+  
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+  </section>
+
+  <section class="container">
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi eum consequuntur error doloribus dicta laudantium, delectus incidunt ipsum nam optio aliquam inventore, eius architecto praesentium. Quo totam nihil itaque officia officiis magnam sit eligendi quasi. Minima tempora non, ab est illum accusamus fugit officia ipsa cum enim deleniti doloribus reprehenderit minus, error aliquid illo quae autem, consequuntur amet in dolor rerum a placeat magni. Dolorum fuga consequuntur, quasi aliquam minus fugit, tempore aut officiis eaque expedita labore tempora esse error hic ad molestiae nemo! Explicabo, officia reiciendis quaerat est nostrum sint cum illo sequi aliquam, facere quos pariatur magni, officiis a animi asperiores incidunt blanditiis? Esse, porro tempore? Fuga debitis ullam asperiores quisquam pariatur cum commodi veniam, maiores eaque sunt excepturi, temporibus dolor exercitationem est fugiat a voluptas odio. Libero unde illum iste sed optio itaque! Ducimus dignissimos nemo fugit ab ipsa minima voluptate? Consectetur doloremque quas, odio quia repellendus tempora quam debitis ab culpa obcaecati, animi nemo modi officiis excepturi porro reprehenderit a quis. Ad nam facere veniam, nemo minus tempore dolore amet deleniti, ex possimus, delectus molestias natus suscipit? Veritatis, cumque beatae odit reiciendis aliquam tempore odio dignissimos! Veritatis sint placeat quia cumque ipsum quisquam, debitis minus.</p>
+    </div>
+  </section>
+
+<!-- Footer -->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Sagar<span>Developer</span></h3>
+
+        <p class="footer-links">
+            <a href="#">Home</a>
+            |
+            <a href="#">About</a>
+            |
+            <a href="#">Contact</a>
+            |
+            <a href="#">Blog</a>
+        </p>
+
+        <p class="footer-company-name">Copyright © 2021 <strong>SagarDeveloper</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Ghaziabad</span>
+                Delhi</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 74**9**258</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">xyz@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>Sagar Developer</strong> is a Youtube channel where you can find more creative CSS Animations
+            and
+            Effects along with
+            HTML, JavaScript and Projects using C/C++.
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let search = document.querySelector('.search-box');
+
+document.querySelector('#search-icon').onclick = () => {
+  search.classList.toggle('active');
+  menu.classList.remove('active');
+}
+
+let menu = document.querySelector('.navbar');
+
+document.querySelector('#menu-icon').onclick = () => {
+  menu.classList.toggle('active');
+  search.classList.remove('active');
+}
+
+//Hide Menu And Search Box On Scroll
+window.onscroll = () => {
+  menu.classList.remove('active');
+  search.classList.remove('active');
+}
+
+//Header
+let header = document.querySelector('header');
+
+window.addEventListener('scroll' , () => {
+  header.classList.toggle('shadow', window.scrollY >0);
+});
+
+
+</script>
+
+</body>
+</html>
